@@ -1,0 +1,47 @@
+{
+    "success": true,
+    "results": [
+        {
+            "name": "Bachelor of Science in Information Technology",
+            "value": "BSIT",
+            "text": "Bachelor of Science in Information Technology",
+            "disabled": false
+        },
+        {
+            "name": "Bachelor of Science in Computer Science",
+            "value": "BSCS",
+            "text": "Bachelor of Science in Computer Science",
+            "disabled": false
+        },
+        {
+            "name": "Bachelor of Science in Pyschology",
+            "value": "BSPSYCH",
+            "text": "Bachelor of Science in Pyschology",
+            "disabled": false
+        },
+        {
+            "name": "Bachelor of Science in Secondary Education",
+            "value": "BSEDUC",
+            "text": "Bachelor of Science in Secondary Education",
+            "disabled": false
+        },
+        {
+            "name": "Bachelor of Science in Criminology",
+            "value": "BSCRIM",
+            "text": "Bachelor of Science in Criminology",
+            "disabled": false
+        },
+        {
+            "name": "Bachelor of Science in Hotel and Restaurant Manage",
+            "value": "BSHRM",
+            "text": "Bachelor of Science in Hotel and Restaurant Manage",
+            "disabled": false
+        },
+        {
+            "name": "Bachelor of Science in Business Management",
+            "value": "BSBM",
+            "text": "Bachelor of Science in Business Management",
+            "disabled": false
+        }
+    ]
+}

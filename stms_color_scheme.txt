@@ -1,0 +1,39 @@
+Color Scheme:
+
+#3cb371 rgb(60, 179, 113)
+#f07660	rgb(240, 118, 96)
+#ffa703	rgb(255, 167, 3)
+#8c71d6 rgb(140, 113, 214)
+
+$blue:
+#3cb4b4
+
+$indigo:
+#963cb4
+
+$purple:
+#5a3cb4
+
+$pink:
+#b43c78
+
+$red:
+#b43c3c
+
+$orange:
+#b4783c
+
+$yellow:
+#b4b43c
+
+$green:
+#3cb371
+
+$teal:
+#3cb496
+
+$cyan:
+#3c78b4
+
+$black:
+#2a2a2a

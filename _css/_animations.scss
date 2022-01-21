@@ -1,0 +1,13 @@
+@keyframes logo_bg_idle {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotateZ(0deg);
+        filter: blur(80px) invert(15%);
+    } 100% {
+        top: -100%;
+        left: -100%;
+        transform: rotateZ(360deg);
+        filter: blur(100px) invert(45%);
+    }
+}

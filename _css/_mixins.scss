@@ -1,0 +1,104 @@
+@mixin alterSelector($max_width:768px) {
+    @media screen and (max_width: $max_width) {
+        @content;
+    }
+}
+
+@mixin clearFix() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin hiddenOverflow() {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@mixin absoluteCenter($transform_values: null) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) $transform_values;
+}
+
+@mixin xCenter($position: absolute, $transform_values: null) {
+    position: $position;
+    left: 50%;
+    transform: translateX(-50%) $transform_values;
+}
+
+@mixin yCenter($position: absolute, $transform_values: null) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%) $transform_values;
+}
+
+@mixin textOverflow($value: ellipsis) {
+    white-space: nowrap;
+    @include hiddenOverflow();
+    text-overflow: $value;
+}
+
+@mixin defaultState() {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+@mixin resetState() {
+    &:focus,
+    &:hover,
+    &:invalid,
+    &:disabled,
+    &:required {
+        @include defaultState;
+    }
+}
+
+@mixin colorizeBlack($color: $color_green, $filter_values: null) {
+    @if $color == $color_green {
+        filter: invert(62%) sepia(6%) saturate(4960%) hue-rotate(87deg) brightness(95%) contrast(94%) $filter_values;
+    } @else if $color == white {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(105%) contrast(101%) $filter_values;
+    }
+}
+
+@mixin generateRules($count, $class_prefix, $styles: null) {
+    $i: 1;
+    @if $class_prefix == width {
+        @while ($i <= $count) {
+            .#{$class_prefix}-#{$i} {
+                $divisor: ($count + 1) - $i;
+                width: calc(calc(100% / #{$count}) * #{$i});
+                border: 1px solid red;
+            }
+            $i: $i + 1;
+        }
+    } @else if $class_prefix == height {
+        @while ($i <= $count) {
+            .#{$class_prefix}-#{$i} {
+                height: 50px * $i;
+            }
+            $i: $i + 1;
+        }
+    } @else {
+        @while ($i <= $count) {
+            @if $i == 1 {
+                .#{$class_prefix}-#{$i} {
+                    @each $property, $value in $styles {
+                        #{$property}: #{$value};
+                    }
+                }
+            } @else {
+                .#{$class_prefix}-#{$i} {
+                    @extend .#{$class_prefix}_1;
+                }
+            }
+            $i: $i + 1;
+        }
+    }
+}

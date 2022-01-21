@@ -1,0 +1,67 @@
+$color_black: rgb(42, 42, 42);
+$color_black_alpha_075: change-color($color_black, $alpha: 0.75);
+$color_black_alpha_050: change-color($color_black, $alpha: 0.50);
+$color_black_alpha_025: change-color($color_black, $alpha: 0.25);
+$color_black_alpha_013: change-color($color_black, $alpha: 0.13);
+$color_black_alpha_007: change-color($color_black, $alpha: 0.07);
+$color_black_trans_050: transparentize($color_black, 0.50);
+$color_black_trans_080: transparentize($color_black, 0.80);
+$color_black_darken_010: darken($color_black, 12%);
+$color_black_lighten_010: darken($color_black, 10%);
+
+$color_white_alpha_075: change-color(white, $alpha: 0.75);
+$color_white_alpha_050: change-color(white, $alpha: 0.50);
+$color_white_alpha_025: change-color(white, $alpha: 0.25);
+$color_white_alpha_013: change-color(white, $alpha: 0.13);
+
+$color_green: mediumseagreen;
+$color_green_dark_010: darken($color_green, 10%);
+$color_green_dark_010_trans_050: change-color($color_green_dark_010, $alpha: 0.50);
+$color_green_dark_020: darken($color_green, 20%);
+$color_green_light_010: lighten($color_green, 10%);
+$color_green_sat_100: saturate($color_green, 100%);
+$color_green_desat_100: saturate($color_green, 100%);
+$color_green_desat_075: saturate($color_green, 75%);
+$color_green_desat_050: saturate($color_green, 50%);
+$color_green_desat_025: saturate($color_green, 25%);
+$color_green_trans_090: transparentize($color_green, 0.90);
+$color_green_trans_075: transparentize($color_green, 0.75);
+$color_green_trans_050: transparentize($color_green, 0.50);
+$color_green_trans_025: transparentize($color_green, 0.25);
+$color_green_trans_013: transparentize($color_green, 0.13);
+$color_green_alpha_075: change-color($color_green, $alpha: 0.75);
+$color_green_alpha_050: change-color($color_green, $alpha: 0.50);
+$color_green_alpha_025: change-color($color_green, $alpha: 0.25);
+$color_green_alpha_013: change-color($color_green, $alpha: 0.13);
+
+
+$bg_both_gender: lightblue linear-gradient(45deg, hsl(120, 73%, 55%), lightgreen) no-repeat center center;
+$bg_male_gender: lightblue linear-gradient(45deg, hsl(195, 53%, 59%), hsl(195, 53%, 79%)) no-repeat center center;
+$bg_female_gender: lightpink linear-gradient(to bottom, hsl(351, 100%, 66%), hsl(351, 100%, 86%)) no-repeat center center;
+
+// $color_darkblack: rgb(15, 15, 15);
+// $color_darkblack_075: change-color($color_darkblack, $alpha: 0.75);
+// $color_darkblack_050: change-color($color_darkblack, $alpha: 0.50);
+// $color_darkblack_025: change-color($color_darkblack, $alpha: 0.25);
+
+// $color_milkygold: rgb(241, 255, 212);
+// $color_milkygold_weak: transparentize($color_milkygold, 0.50);
+// $color_milkygold_veryweak: transparentize($color_milkygold, 0.80);
+// $color_milkygold_strong: darken($color_milkygold, 25%);
+// $color_milkygold_verystrong: darken($color_milkygold, 15%);
+
+// $color_greenish: rgb(0, 255, 153);
+// $color_greenish_weak: transparentize($color_greenish, 0.50);
+// $color_greenish_veryweak: transparentize($color_greenish, 0.80);
+// $color_greenish_strong: darken($color_greenish, 5%);
+// $color_greenish_verystrong: darken($color_greenish, 15%);
+
+// $color_darkgreenish: change-color($color_greenish, $lightness: 40%);
+// $color_darkgreenish_weak: transparentize($color_darkgreenish, 0.50);
+// $color_darkgreenish_veryweak: transparentize($color_darkgreenish, 0.80);
+
+$transition_ease_in_out_quick: all ease-in-out 200ms;
+$transition_ease_in_out_500ms: all ease-in-out 500ms;
+$transition_ease_in_out_backwards_350ms: all cubic-bezier(.68,-0.55,.27,1.55) 350ms;
+$transition_sudden_push: all cubic-bezier(.77,0,.18,1) 800ms;
+$transition_sudden_push_200: all cubic-bezier(.77,0,.18,1) 200ms;
